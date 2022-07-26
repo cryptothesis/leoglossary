@@ -14,8 +14,8 @@
   <br>
   <input type="submit" onclick="update()" value="Generate">
 
-<p id ="output"></p>
-
+<p id ="output2">Output:</p>
+<textarea id="output" rows="10" cols="80"></textarea>
 </body>
 
 <script>
@@ -38,7 +38,7 @@ function update() {
 
 
 
-  document.getElementById("output").innerHTML=  input;
+  document.getElementById("output").value=  input;
 }
 
 </script>
