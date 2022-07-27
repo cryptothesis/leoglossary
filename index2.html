@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+<h1 id ="Title">LeoGlossary URL Linking Tool</h1>
+<p id ="intro">Key in your text and have the LeoGlossary link automatically created. Note: Testing mode, only "Hive", "bitcoin" and "blockchain" for now...</p>
+<a href="https://peakd.com/@cryptothesis/"> Created by @cryptothesis on Hive</a>
+
+
+<p>Disclaimer: The output generated may not be accurate.</p>
+
+  <p><label for="input">Input text:</label></p>
+  <textarea id="input" rows="10" cols="80">If you know Bitcoin, and not know about the Hive blockchain, you don't know what you are missing!</textarea>
+  <br>
+  <input type="submit" onclick="update()" value="Generate">
+
+<p id ="output2">Output:</p>
+<textarea id="output" rows="10" cols="80"></textarea>
+</body>
+
+<script>
+
+function update() {
+
+  input = document.getElementById("input").value
+
+  input = input.replaceAll("bitcoin", "[bitcoin](https://leofinance.io/@leoglossary/leoglossary-bitcoin)");
+   input = input.replaceAll("Bitcoin", "[Bitcoin](https://leofinance.io/@leoglossary/leoglossary-bitcoin)");
+
+  input = input.replaceAll("Blockchain", "[Blockchain](https://leofinance.io/@leoglossary/blockchain)");
+  input = input.replaceAll("blockchain", "[blockchain](https://leofinance.io/@leoglossary/blockchain)");
+
+  input = input.replaceAll("hive", "[hive](https://leofinance.io/@crypto-guides/what-is-hive-crypto-hive)");
+  input = input.replaceAll("Hive", "[Hive](https://leofinance.io/@crypto-guides/what-is-hive-crypto-hive)");
+  
+input = input.replaceAll("51% attack", "[51% Attack](https:\\leofinance.io\@leoglossary\leoglossary-51-attack); 
+
+input = input.replaceAll("Accounting", "[Accounting](https:\\leofinance.io\@leoglossary\leoglossary-accounting);
+input = input.replaceAll("accounting", "[accounting](https:\\leofinance.io\@leoglossary\leoglossary-accounting);
+
+input = input.replaceAll("Accredited Investor", "[Accredited Investor](https:\\leofinance.io\@leoglossary\leoglossary-accredited-investor);
+input = input.replaceAll("accredited investor", "[accredited investor](https:\\leofinance.io\@leoglossary\leoglossary-accredited-investor);
+
+input = input.replaceAll("Address", "[Address](https:\\leofinance.io\@leoglossary\leoglossary-private-key);
+input = input.replaceAll("address", "[address](https:\\leofinance.io\@leoglossary\leoglossary-private-key);
+
+input = input.replaceAll("Advertising", "[Advertising](https:\\leofinance.io\@leoglossary\leoglossary-advertising);
+input = input.replaceAll("advertising", "[advertising](https:\\leofinance.io\@leoglossary\leoglossary-advertising);
+                           
+input = input.replaceAll("Airdrop", "[Airdrop](https:\\leofinance.io\@leoglossary\leoglossary-airdrop);
+input = input.replaceAll("airdrop", "[airdrop](https:\\leofinance.io\@leoglossary\leoglossary-airdrop);
+                                                  
+input = input.replaceAll("Algorithm", "[Algorithm](https:\\leofinance.io\@leoglossary\leoglossary-algorithm);
+input = input.replaceAll("algorithm", "[algorithm](https:\\leofinance.io\@leoglossary\leoglossary-algorithm);
+                         
+input = input.replaceAll("All Time High(ATH)", "[All Time High(ATH)](https:\\leofinance.io\@leoglossary\leoglossary-all-time-high-ath);
+input = input.replaceAll("ATH", "[ATH](https:\\leofinance.io\@leoglossary\leoglossary-all-time-high-ath);
+input = input.replaceAll("all time high", "[all time high](https:\\leofinance.io\@leoglossary\leoglossary-all-time-high-ath);
+
+input = input.replaceAll("All Time Low(ATL)", "[All Time Low(ATL)](https:\\leofinance.io\@leoglossary\leoglossary-all-time-low-atl);
+input = input.replaceAll("ATL", "[All Time Low(ATL)](https:\\leofinance.io\@leoglossary\leoglossary-all-time-low-atl);
+input = input.replaceAll("all time low", "[all time low](https:\\leofinance.io\@leoglossary\leoglossary-all-time-low-atl);
+
+input = input.replaceAll("Altcoin", "[Altcoin](https:\\leofinance.io\@leoglossary\leoglossary-altcoin);
+input = input.replaceAll("Altcoins", "[Altcoins](https:\\leofinance.io\@leoglossary\leoglossary-altcoin);
+input = input.replaceAll("altcoin", "[altcoin](https:\\leofinance.io\@leoglossary\leoglossary-altcoin);
+input = input.replaceAll("altcoins", "[altcoins](https:\\leofinance.io\@leoglossary\leoglossary-altcoin);
+                         
+input = input.replaceAll("Amortization", "[Amortization](https:\\leofinance.io\@leoglossary\leoglossary-amoritization);
+input = input.replaceAll("amortization", "[amortization](https:\\leofinance.io\@leoglossary\leoglossary-amoritization);
+
+
+input = input.replaceAll("Annual Percentage Rate", "[Annual Percentage Rate(APR)](https:\\leofinance.io\@leoglossary\leoglossary-annual-percentage-return-apr);
+input = input.replaceAll("annual percentage rate", "[annual percentage rate](https:\\leofinance.io\@leoglossary\leoglossary-annual-percentage-return-apr);
+input = input.replaceAll("APR", "[APR)](https:\\leofinance.io\@leoglossary\leoglossary-annual-percentage-return-apr);
+
+input = input.replaceAll("Annual Percentage Yield", "[Annual Percentage Yield (APY)](https:\\leofinance.io\@leoglossary\leoglossary-annual-percentage-yield-apy);
+input = input.replaceAll("annual percentage yield", "[annual percentage yield](https:\\leofinance.io\@leoglossary\leoglossary-annual-percentage-yield-apy);
+input = input.replaceAll("APY", "[APY](https:\\leofinance.io\@leoglossary\leoglossary-annual-percentage-yield-apy);
+
+input = input.replaceAll("Annual Report", "[Annual Report](https:\\leofinance.io\@leoglossary\leoglossary-annual-report);
+input = input.replaceAll("annual report", "[annual report](https:\\leofinance.io\@leoglossary\leoglossary-annual-report);
+
+input = input.replaceAll("Anti-Money Laundering", "[Anti-Money Laundering (AML)](https:\\leofinance.io\@leoglossary\leoglossary-anti-money-laundering-aml);
+input = input.replaceAll("Anti-money laundering", "[Anti-money laundering](https:\\leofinance.io\@leoglossary\leoglossary-anti-money-laundering-aml);
+input = input.replaceAll("AML", "AML](https:\\leofinance.io\@leoglossary\leoglossary-anti-money-laundering-aml);
+
+input = input.replaceAll("Application", "[Application](https:\\leofinance.io\@leoglossary\leoglossary-application);
+input = input.replaceAll("application", "[application](https:\\leofinance.io\@leoglossary\leoglossary-application);
+
+input = input.replaceAll("Arbitrage", "[Arbitrage](https:\\leofinance.io\@leoglossary\leoglossary-arbitrage);
+input = input.replaceAll("arbitrage", "[arbitrage](https:\\leofinance.io\@leoglossary\leoglossary-arbitrage);
+
+input = input.replaceAll("Asset", "[Asset](https:\\leofinance.io\@leoglossary\leoglossary-asset);
+input = input.replaceAll("asset", "[asset](https:\\leofinance.io\@leoglossary\leoglossary-asset);
+
+input = input.replaceAll("Asset Allocation", "[Asset Allocation](https:\\leofinance.io\@leoglossary\leoglossary-asset-allocation);
+input = input.replaceAll("asset allocation", "[asset allocation](https:\\leofinance.io\@leoglossary\leoglossary-asset-allocation);
+
+input = input.replaceAll("Asset-Backed Security (ABS)", "[Asset-Backed Security (ABS)](https:\\leofinance.io\@leoglossary\leoglossary-asset-backed-securities-abs);
+input = input.replaceAll("Asset-Backed Security", "[Asset-Backed Security](https:\\leofinance.io\@leoglossary\leoglossary-asset-backed-securities-abs);
+input = input.replaceAll("Asset-backed security", "[Asset-backed security](https:\\leofinance.io\@leoglossary\leoglossary-asset-backed-securities-abs);
+input = input.replaceAll("ABS", "[ABS](https:\\leofinance.io\@leoglossary\leoglossary-asset-backed-securities-abs);
+
+input = input.replaceAll("Asset Under Management", "[Asset Under Management](https:\\leofinance.io\@leoglossary\leoglossary-assets-under-management-aum);
+input = input.replaceAll("asset under management", "[asset under management](https:\\leofinance.io\@leoglossary\leoglossary-assets-under-management-aum);
+input = input.replaceAll("AUM", "[AUM](https:\\leofinance.io\@leoglossary\leoglossary-assets-under-management-aum);
+
+input = input.replaceAll("Atomic Swap", "[Atomic Swap](https:\\leofinance.io\@leoglossary\leoglossary-atomic-swap);
+input = input.replaceAll("atomic swap", "[atomic swap](https:\\leofinance.io\@leoglossary\leoglossary-atomic-swap);
+
+input = input.replaceAll("Avalanche", "[Avalanche](https:\\leofinance.io\@crypto-guides\what-is-avalanche-crypto-avax);
+input = input.replaceAll("AVAX", "[AVAX](https:\\leofinance.io\@crypto-guides\what-is-avalanche-crypto-avax);                         
+
+input = input.replaceAll("Bagholder", "[Bagholder](https:\\leofinance.io\@leoglossary\leoglossary-bagholder);
+input = input.replaceAll("bagholder", "[bagholder](https:\\leofinance.io\@leoglossary\leoglossary-bagholder);
+
+input = input.replaceAll("Balance Sheet", "[Balance Sheet](https:\\leofinance.io\@leoglossary\leoglossary-balance-sheet);
+input = input.replaceAll("balance sheet", "[balance sheet](https:\\leofinance.io\@leoglossary\leoglossary-balance-sheet);
+
+input = input.replaceAll("Bank", "[Bank](https:\\leofinance.io\@leoglossary\leoglossary-bank);
+input = input.replaceAll("bank", "[bank](https:\\leofinance.io\@leoglossary\leoglossary-bank);
+
+input = input.replaceAll("Banknote", "[Banknote](https:\\leofinance.io\@leoglossary\leoglossary-banknote);
+input = input.replaceAll("banknote", "[banknote](https:\\leofinance.io\@leoglossary\leoglossary-banknote);
+
+input = input.replaceAll("Bankruptcy", "[Bankruptcy](https:\\leofinance.io\@leoglossary\leoglossary-bankruptcy);
+input = input.replaceAll("Bankruptcy", "[Bankruptcy](https:\\leofinance.io\@leoglossary\leoglossary-bankruptcy);
+
+input = input.replaceAll("Base Layer", "[Base Layer (Blockchain)](https:\\leofinance.io\@leoglossary\leoglossary-base-layer-blockchain);
+input = input.replaceAll("base layer", "[base layer (Blockchain)](https:\\leofinance.io\@leoglossary\leoglossary-base-layer-blockchain);
+
+input = input.replaceAll("Bear Market", "[Bear Market](https:\\leofinance.io\@leoglossary\leoglossary-bear-market);
+input = input.replaceAll("bear market", "[bear market](https:\\leofinance.io\@leoglossary\leoglossary-bear-market);
+
+
+
+
+  document.getElementById("output").value=  input;
+}
+
+</script>
